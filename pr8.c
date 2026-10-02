@@ -10,7 +10,7 @@ struct Item
     float ratio;
 };
 
-void main()
+int main()
 {
     int n, capacity;
     float totalValue = 0;
@@ -77,7 +77,6 @@ void main()
             float fractionValue = item[i].value * fraction;
 
             totalValue = totalValue + fractionValue;
-
             capacity = 0;
 
             printf("%d\t\t%d\t\t%d\t\t%.2f\t%.2f\n",
@@ -90,4 +89,6 @@ void main()
     }
 
     printf("\nMaximum Profit = %.2f\n", totalValue);
+
+    return 0;
 }
